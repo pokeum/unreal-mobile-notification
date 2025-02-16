@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "Mobile Notification",
+	"Description": "Support for remote notifications using Firebase",
+	"Category": "Notifications",
+	"CreatedBy": "pokeum",
+	"CreatedByURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"EnabledByDefault": true,
+	"Installed": false,
+	"SupportedTargetPlatforms": [
+		"Android", 
+		"IOS"
+	],
+	"Modules": [
+		{
+			"Name": "MobileNotification",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen"
+		}
+	]
+}

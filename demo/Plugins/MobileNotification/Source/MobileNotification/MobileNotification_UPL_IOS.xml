@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- init section is always evaluated once per architecture -->
+    <init>
+        <log text="Mobile Notification: init"/>
+
+        <setBoolFromProperty result="bEnabled" ini="Engine" section="Firebase" property="FirebaseEnabled" default="false"/>
+        <if condition="bEnabled">
+            <true>
+                <log text="Mobile Notification: Firebase enabled!"/>
+
+                <!-- May need client sender ID for notification handling -->
+                <!-- setStringFromProperty result="firebase-client-sender-id" ini="Engine" section="Firebase" property="FirebaseClientSenderID" default="" /-->
+
+                <!-- Unreal Engine Project Name -->
+                <setStringFromProperty result="sProjectName" ini="Engine" section="Firebase" property="ProjectName" default=""/>
+                <setBoolIsEqual result="bProjectNameUnset" arg1="$S(sProjectName)" arg2=""/>
+            </true>
+        </if>
+    </init>
+
+    <iosPListUpdates>
+        <if condition="bEnabled">
+            <true>
+                <copyFile
+                        src="$S(PluginDir)/../../../../Config/Firebase/GoogleService-Info.plist"
+                        dst="$S(BuildDir)/GoogleService-Info.plist"
+                        force="false"/>
+
+                <if condition="bProjectNameUnset">
+                    <true>
+                        <log text="Mobile Notification: Unreal Engine project name unset!"/>
+                    </true>
+                    <false>
+                        <log text="Mobile Notification: Unreal Engine project name: $S(sProjectName)"/>
+                        <copyFile
+                                src="$S(PluginDir)/../../../../Config/Firebase/GoogleService-Info.plist"
+                                dst="$S(BuildDir)/../../$S(sProjectName).app/GoogleService-Info.plist"
+                                force="false"/>
+                    </false>
+                </if>
+            </true>
+        </if>
+    </iosPListUpdates>
+</root>

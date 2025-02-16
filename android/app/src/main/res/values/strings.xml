@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">notification</string>
+    <string name="firebase_token">Firebase Token</string>
+    <string name="get">Get</string>
+    <string name="copy">Copy</string>
+    <string name="delete">Delete</string>
+</resources>

@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+post_install do |installer|
+    installer.generated_projects.each do |project|
+        project.targets.each do |target|
+            target.build_configurations.each do |config|
+                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+            end
+        end
+    end
+end
+
+target 'example' do
+
+    use_frameworks!
+
+    pod 'Firebase/Core', '5.20.0'
+    pod 'Firebase/Messaging', '5.20.0'
+
+    # Pinned version for Firebase Messaging
+    pod 'Protobuf', '= 3.22.1'
+
+end
