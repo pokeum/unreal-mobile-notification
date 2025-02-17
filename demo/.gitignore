@@ -79,4 +79,8 @@ Intermediate/Android/armv7/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
+# Firebase
+Config/Firebase/GoogleService-Info.plist 
+Config/Firebase/google-services.json
+
 /.idea

@@ -17,7 +17,6 @@
 		BD59B9022C15A46F00378162 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BD59B9012C15A46F00378162 /* Base */; };
 		BD59B9052C15A46F00378162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD59B9042C15A46F00378162 /* main.m */; };
 		BD59B9762C15AB7300378162 /* MNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD59B9752C15AB7200378162 /* MNAppDelegate.m */; };
-		BDEAC33D2C15C7620002C3D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDEAC33C2C15C7620002C3D7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		BD59B9042C15A46F00378162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BD59B9742C15AB7200378162 /* MNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNAppDelegate.h; sourceTree = "<group>"; };
 		BD59B9752C15AB7200378162 /* MNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNAppDelegate.m; sourceTree = "<group>"; };
-		BDEAC33C2C15C7620002C3D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD29B1A23786326FFE0C4E5B /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
 		DB30E8E9CC2854FE8BC00BF4 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +125,6 @@
 				63A70E012D54A00B007F6D70 /* Storyboard */,
 				63A70E002D54A000007F6D70 /* Delegate */,
 				BD40CBEA2C17E43500BD6F57 /* example.entitlements */,
-				BDEAC33C2C15C7620002C3D7 /* GoogleService-Info.plist */,
 				BD59B9732C15AB2A00378162 /* MobileNotification */,
 				BD59B8FE2C15A46E00378162 /* Assets.xcassets */,
 				BD59B9032C15A46F00378162 /* Info.plist */,
@@ -207,7 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD59B8FF2C15A46E00378162 /* Assets.xcassets in Resources */,
-				BDEAC33D2C15C7620002C3D7 /* GoogleService-Info.plist in Resources */,
 				BD59B9022C15A46F00378162 /* Base in Resources */,
 				BD59B8FD2C15A46C00378162 /* Base in Resources */,
 			);
