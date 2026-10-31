@@ -148,3 +148,17 @@ To deliver a background notification, the system wakes your app in the backgroun
        }
      }'
    ```
+
+<details>
+<summary>Send data messages via Terminal</summary>
+
+> ```shell
+> adb shell am broadcast \
+>   -a com.google.android.c2dm.intent.RECEIVE \
+>   -n {YOUR_APP_PACKAGE}/com.google.firebase.iid.FirebaseInstanceIdReceiver \
+>   --es "Nick" "Mario" \
+>   --es "Room" "PortugalVSDenmark"
+> ```
+> → 🔗 [Reference Link](https://medium.com/@raunaksett/debug-fcm-firebase-cloud-messaging-notifications-using-adb-298a071e0039)
+
+</details>
